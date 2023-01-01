@@ -7,71 +7,187 @@
     <link rel="stylesheet" href="output.css" />
     <script src="app.js" defer></script>
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div class="grid grid-flow-col">
-      <div class="bg-sky-500 p-6" id="navPane">
-        <div class="pb-8">
-          <img src="" alt="" id="logo" />
-          <span class="text-3xl font-bold text-white">Dashboard</span>
+  <body class="font-poppins">
+    <div class="grid grid-cols-[20rem,1fr] overflow-auto h-screen">
+      <div class="bg-sky-500 px-8 py-6 h-full" id="dashboard">
+        <div class="pb-8 flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="white"
+            class="w-12 h-12"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <span class="text-3xl font-semibold text-white my-auto pl-2"
+            >Dashboard</span
+          >
         </div>
-        <section id="nav1">
-          <div id="navItem1">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Home</span
+        <ul class="font-semibold text-white text-2xl mb-12 space-y-4">
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 mb-1"
             >
+              <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+              />
+              <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+              />
+            </svg>
+            <a href="" class="align-baseline">Home</a>
           </div>
-          <div id="navItem2">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Profile</span
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 mb-1"
             >
+              <path
+                fill-rule="evenodd"
+                d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <a href="">Profile</a>
           </div>
-          <div id="navItem3">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Messages</span
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 mb-1"
             >
+              <path
+                d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z"
+              />
+              <path
+                d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 001.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0015.75 7.5z"
+              />
+            </svg>
+            <a href="">Messages</a>
           </div>
-          <div id="navItem4">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >History</span
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 mb-1"
             >
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <a href="">History</a>
           </div>
-          <div id="navItem5">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Tasks</span
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 mb-1"
             >
+              <path
+                fill-rule="evenodd"
+                d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5zm6.61 10.936a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"
+              />
+            </svg>
+            <a href="">Tasks</a>
           </div>
-          <div id="navItem6">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Communities</span
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 mb-1"
             >
+              <path
+                fill-rule="evenodd"
+                d="M8.25 6.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM15.75 9.75a3 3 0 116 0 3 3 0 01-6 0zM2.25 9.75a3 3 0 116 0 3 3 0 01-6 0zM6.31 15.117A6.745 6.745 0 0112 12a6.745 6.745 0 016.709 7.498.75.75 0 01-.372.568A12.696 12.696 0 0112 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 01-.372-.568 6.787 6.787 0 011.019-4.38z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z"
+              />
+            </svg>
+            <a href="">Communities</a>
           </div>
-        </section>
-        <section id="nav2">
-          <div id="nav2Item">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Settings</span
-            >
-          </div>
-          <div id="nav2Item">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Support</span
-            >
-          </div>
-          <div id="nav2Item">
-            <img src="" alt="" /><span class="text-2xl font-semibold text-white"
-              >Privacy</span
-            >
-          </div>
-        </section>
+        </ul>
+        <ul class="font-semibold text-white text-2xl space-y-3">
+          <div><img src="" alt="" /><a href="">Settings</a></div>
+          <div><img src="" alt="" /><a href="">Support</a></div>
+          <div><img src="" alt="" /><a href="">Privacy</a></div>
+        </ul>
       </div>
-      <div class="" id="adminPane">
-        <header>
-          <div id="searchBar">
-            <img src="" alt="" />
-            <input type="text" name="" id="" />
-            <div id="notifications"></div>
-            <div id="userProfile"></div>
+      <div class="h-full flex flex-col" id="adminPane">
+        <header
+          class="topBar py-8 mr-16 pl-12 pr-16 h-fit w-full bg-white drop-shadow-md"
+        >
+          <div id="topBar" class="flex items-center justify-start">
+            <div class="">
+              <a href="">
+                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="grow">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="py-2 px-4 mx-4 bg-gray-200 rounded-full w-full max-w-2xl"
+              />
+            </div>
+            <div id="notifications" class="ml-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-7 h-7"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+                />
+              </svg>
+            </div>
+            <div id="userProfile" class="ml-8 mr-4">
+              <img
+                src="https://i.pravatar.cc/50?img=12"
+                alt="user1profilepic"
+                class="rounded-full h-14 w-14"
+              />
+            </div>
+            <div class="text-lg font-bold">Morgan Oakley</div>
           </div>
           <div id="userBar">
             <div id="user"></div>
@@ -82,74 +198,521 @@
             </div>
           </div>
         </header>
-        <section class="bg-gray-300 p-6" id="contentPane">
-          <h2 class="text-2xl font-semibold py-2">Your Projects</h2>
-          <div
-            class="grid grid-cols-2 gap-4 place-content-start justify-start align-middle place-items-start"
-            id="yourProjects"
-          >
-            <div id="projectCard1" class="py-6 px-2 bg-white rounded-lg">
-              <h2 class="text-lg font-semibold">Super Cool Project</h2>
-              <p>
-                This is the description of a project, it is used to describe the
-                project and communicate its content and purpose to the user. It
-                should be terse yet still detailed enough to convery the
-                necessary information.
-              </p>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
-            </div>
-            <div id="projectCard2" class="py-6 px-2 bg-white rounded-lg">
-              <h2 class="text-lg font-semibold">Less Cool Project</h2>
-              <p>
-                This is the description of a project, it is used to describe the
-                project and communicate its content and purpose to the user. It
-                should be terse yet still detailed enough to convery the
-                necessary information.
-              </p>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
-            </div>
-            <div id="projectCard3" class="py-6 px-2 bg-white rounded-lg">
-              <h2 class="text-lg font-semibold">Impossible App</h2>
-              <p>
-                This is the description of a project, it is used to describe the
-                project and communicate its content and purpose to the user. It
-                should be terse yet still detailed enough to convery the
-                necessary information.
-              </p>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
-            </div>
-            <div id="projectCard4" class="py-6 px-2 bg-white rounded-lg">
-              <h2 class="text-lg font-semibold">Easy Peasy App</h2>
-              <p>
-                This is the description of a project, it is used to describe the
-                project and communicate its content and purpose to the user. It
-                should be terse yet still detailed enough to convery the
-                necessary information.
-              </p>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
-            </div>
-            <div id="projectCard5" class="py-6 px-2 bg-white rounded-lg">
-              <h2 class="text-lg font-semibold">Ad Blocker</h2>
-              <p>
-                This is the description of a project, it is used to describe the
-                project and communicate its content and purpose to the user. It
-                should be terse yet still detailed enough to convery the
-                necessary information.
-              </p>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
-            </div>
-            <div id="projectCard6" class="py-6 px-2 bg-white rounded-lg">
-              <h2 class="text-lg font-semibold">Money Maker</h2>
-              <p>
-                This is the description of a project, it is used to describe the
-                project and communicate its content and purpose to the user. It
-                should be terse yet still detailed enough to convery the
-                necessary information.
-              </p>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+        <section
+          class="bg-gray-200 overflow-auto p-6 grid grid-cols-[1fr,20rem] gap-5 h-full place-content-start"
+          id="contentPane"
+        >
+          <div class="grid place-content-start" id="yourProjects">
+            <h2 class="text-2xl font-semibold my-4">Your Projects</h2>
+            <div
+              class="pb-12 pr-1 container gap-7 place-content-start justify-start align-middle place-items-start"
+            >
+              <div
+                id="projectCard1"
+                class="bg-white rounded-lg max-w-xl w-xl shadow-md border-l-8 p-6 border-t-0 border-b-0 border-r-0 border-yellow-500"
+              >
+                <!-- <div class="bg-yellow-500 w-14 flex-grow"></div> -->
+                <h2 class="text-lg font-semibold">Super Cool Project</h2>
+                <p class="text-zinc-600 font-medium">
+                  This is the description of a project, it is used to describe
+                  the project and communicate its content and purpose to the
+                  user. It should be terse yet still detailed enough to convery
+                  the necessary information.
+                </p>
+                <div class="flex flex-row justify-end gap-6 mt-8">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="projectCard2"
+                class="bg-white rounded-lg max-w-xl shadow-md border-l-8 p-6 border-t-0 border-b-0 border-r-0 border-yellow-500"
+              >
+                <!-- <div class="bg-yellow-500 w-14 flex-grow"></div> -->
+                <h2 class="text-lg font-semibold">Less Cool Project</h2>
+                <p class="text-zinc-600 font-medium">
+                  This is the description of a project, it is used to describe
+                  the project and communicate its content and purpose to the
+                  user. It should be terse yet still detailed enough to convery
+                  the necessary information.
+                </p>
+                <div class="flex flex-row justify-end gap-6 mt-8">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="projectCard3"
+                class="bg-white rounded-lg max-w-xl shadow-md border-l-8 p-6 border-t-0 border-b-0 border-r-0 border-yellow-500"
+              >
+                <!-- <div class="bg-yellow-500 w-14 flex-grow"></div> -->
+                <h2 class="text-lg font-semibold">Impossible App</h2>
+                <p class="text-zinc-600 font-medium">
+                  This is the description of a project, it is used to describe
+                  the project and communicate its content and purpose to the
+                  user. It should be terse yet still detailed enough to convery
+                  the necessary information.
+                </p>
+                <div class="flex flex-row justify-end gap-6 mt-8">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="projectCard4"
+                class="bg-white rounded-lg max-w-xl shadow-md border-l-8 p-6 border-t-0 border-b-0 border-r-0 border-yellow-500"
+              >
+                <!-- <div class="bg-yellow-500 w-14 flex-grow"></div> -->
+                <h2 class="text-lg font-semibold">Easy Peasy App</h2>
+                <p class="text-zinc-600 font-medium">
+                  This is the description of a project, it is used to describe
+                  the project and communicate its content and purpose to the
+                  user. It should be terse yet still detailed enough to convery
+                  the necessary information.
+                </p>
+                <div class="flex flex-row justify-end gap-6 mt-8">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="projectCard5"
+                class="bg-white rounded-lg max-w-xl shadow-md border-l-8 p-6 border-t-0 border-b-0 border-r-0 border-yellow-500"
+              >
+                <!-- <div class="bg-yellow-500 w-14 flex-grow"></div> -->
+                <h2 class="text-lg font-semibold">Ad Blocker</h2>
+                <p class="text-zinc-600 font-medium">
+                  This is the description of a project, it is used to describe
+                  the project and communicate its content and purpose to the
+                  user. It should be terse yet still detailed enough to convery
+                  the necessary information.
+                </p>
+                <div class="flex flex-row justify-end gap-6 mt-8">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                id="projectCard6"
+                class="bg-white rounded-lg max-w-xl shadow-md border-l-8 p-6 border-t-0 border-b-0 border-r-0 border-yellow-500"
+              >
+                <!-- <div class="bg-yellow-500 w-14 flex-grow"></div> -->
+                <h2 class="text-lg font-semibold">Money Maker</h2>
+                <p class="text-zinc-600 font-medium">
+                  This is the description of a project, it is used to describe
+                  the project and communicate its content and purpose to the
+                  user. It should be terse yet still detailed enough to convery
+                  the necessary information.
+                </p>
+                <div class="flex flex-row justify-end gap-6 mt-8">
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="" id="announcements"></div>
+          <div class="grid grid-rows-2 gap-4">
+            <div class="" id="Announcements">
+              <h2 class="text-2xl font-semibold my-4">Announcements</h2>
+              <div
+                id="announcementCard"
+                class="p-6 bg-white rounded-lg max-w-lg shadow-md"
+              >
+                <div id="announcement1" class="border-b-2 mb-4">
+                  <h2 class="text-base font-semibold">Site Maintenance</h2>
+                  <p class="mb-4 text-zinc-600 font-medium text-sm">
+                    This is an announcement! Look at this exciting new
+                    information about things that have happened, or possibly
+                    things that have yet to happen!
+                  </p>
+                </div>
+                <div id="announcement2" class="border-b-2 mb-4">
+                  <h2 class="text-base font-semibold">Community Share Day</h2>
+                  <p class="mb-4 text-zinc-600 font-medium text-sm">
+                    This is an announcement! Look at this exciting new
+                    information about things that have happened, or possibly
+                    things that have yet to happen!
+                  </p>
+                </div>
+                <div id="announcement3" class="">
+                  <h2 class="text-base font-semibold">
+                    Updated Privacy Policy
+                  </h2>
+                  <p class="text-zinc-600 font-medium text-sm">
+                    This is an announcement! Look at this exciting new
+                    information about things that have happened, or possibly
+                    things that have yet to happen!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="" id="Trending">
+              <h2 class="text-2xl font-semibold my-4">Trending</h2>
+              <div
+                id="trendingCard"
+                class="p-6 bg-white rounded-lg max-w-lg shadow-md"
+              >
+                <div id="trendingUser1" class="mb-6 flex flex-row">
+                  <img
+                    src="https://i.pravatar.cc/50?img=24"
+                    alt="user1profilepic"
+                    class="rounded-full mr-4 h-14 w-14"
+                  />
+                  <div>
+                    <h2 class="font-medium">@tegan</h2>
+                    <span class="text-zinc-600 font-medium"
+                      >World Peace Builder</span
+                    >
+                  </div>
+                </div>
+                <div id="trendingUser1" class="mb-6 flex flex-row">
+                  <img
+                    src="https://i.pravatar.cc/50?img=12"
+                    alt="user1profilepic"
+                    class="rounded-full mr-4 h-14 w-14"
+                  />
+                  <div>
+                    <h2 class="font-medium">@morgan</h2>
+                    <span class="text-zinc-600 font-medium"
+                      >Super Cool Project</span
+                    >
+                  </div>
+                </div>
+                <div id="trendingUser1" class="mb-6 flex flex-row">
+                  <img
+                    src="https://i.pravatar.cc/50?img=5"
+                    alt="user1profilepic"
+                    class="rounded-full mr-4 h-14 w-14"
+                  />
+                  <div>
+                    <h2 class="font-medium">@kendall</h2>
+                    <span class="text-zinc-600 font-medium"
+                      >Life Changing App</span
+                    >
+                  </div>
+                </div>
+                <div id="trendingUser1" class="flex flex-row">
+                  <img
+                    src="https://i.pravatar.cc/50?img=34"
+                    alt="user1profilepic"
+                    class="rounded-full mr-4 h-14 w-14"
+                  />
+                  <div>
+                    <h2 class="font-medium">@alex</h2>
+                    <span class="text-zinc-600 font-medium"
+                      >No Traffic Maker</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
