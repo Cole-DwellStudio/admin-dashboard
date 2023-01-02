@@ -17,14 +17,21 @@
     />
   </head>
   <body class="font-OpenSans">
-    <div class="grid xl:grid-cols-[20rem,1fr] overflow-auto h-screen">
-      <div class="bg-sky-550 px-8 py-6 h-full hidden xl:block" id="sidebar">
+    <div
+      class="grid xl:grid-cols-[20rem,1fr] overflow-auto h-screen"
+      data-visible="true"
+    >
+      <div
+        class="bg-sky-550 pl-8 pr-8 py-6 h-full xl:static fixed z-50 -translate-x-80 xl:translate-x-0 transition-all motion-reduce:transition-none"
+        id="sidebar"
+        data-NavOpen="false"
+      >
         <div class="pb-8 flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="white"
-            class="w-12 h-12"
+            class="w-12 h-12 xl:block hidden"
           >
             <path
               fill-rule="evenodd"
@@ -36,6 +43,20 @@
           <span class="text-3xl font-bold text-white my-auto pl-2"
             >Dashboard</span
           >
+          <a href="" class="ml-4 xl:hidden" id="menuCloseButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              class="w-12 h-12"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
         <ul class="font-semibold text-white text-2xl mb-12 space-y-4">
           <div class="flex gap-3 items-center">
@@ -52,7 +73,7 @@
                 d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
               />
             </svg>
-            <a href="" class="align-baseline">Home</a>
+            <a href="" class="hover:underline">Home</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -67,7 +88,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <a href="">Profile</a>
+            <a href="" class="hover:underline">Profile</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -83,7 +104,7 @@
                 d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 001.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0015.75 7.5z"
               />
             </svg>
-            <a href="">Messages</a>
+            <a href="" class="hover:underline">Messages</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -98,7 +119,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            <a href="">History</a>
+            <a href="" class="hover:underline">History</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -116,7 +137,7 @@
                 d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"
               />
             </svg>
-            <a href="">Tasks</a>
+            <a href="" class="hover:underline">Tasks</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -134,7 +155,7 @@
                 d="M5.082 14.254a8.287 8.287 0 00-1.308 5.135 9.687 9.687 0 01-1.764-.44l-.115-.04a.563.563 0 01-.373-.487l-.01-.121a3.75 3.75 0 013.57-4.047zM20.226 19.389a8.287 8.287 0 00-1.308-5.135 3.75 3.75 0 013.57 4.047l-.01.121a.563.563 0 01-.373.486l-.115.04c-.567.2-1.156.349-1.764.441z"
               />
             </svg>
-            <a href="">Communities</a>
+            <a href="" class="hover:underline">Communities</a>
           </div>
         </ul>
         <ul class="font-semibold text-white text-2xl space-y-3">
@@ -152,7 +173,7 @@
               />
             </svg>
 
-            <a href="">Settings</a>
+            <a href="" class="hover:underline">Settings</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -168,7 +189,7 @@
               />
             </svg>
 
-            <a href="">Support</a>
+            <a href="" class="hover:underline">Support</a>
           </div>
           <div class="flex gap-3 items-center">
             <svg
@@ -184,34 +205,49 @@
               />
             </svg>
 
-            <a href="">Privacy</a>
+            <a href="" class="hover:underline">Privacy</a>
           </div>
         </ul>
       </div>
       <div class="h-full flex flex-col" id="adminPane">
         <header
-          class="topBar pt-8 pb-5 mr-16 md:pl-12 pl-4 md:pr-16 pr-4 h-fit w-full bg-white drop-shadow-md space-y-8"
+          class="topBar pt-8 pb-5 pl-4 md:pl-8 md:pr-16 pr-4 h-fit w-full bg-white drop-shadow-md sm:space-y-8 space-y-4"
         >
-          <div id="topBar" class="flex items-center justify-start">
-            <div class="">
+          <div id="topBar" class="flex items-center justify-start w-full">
+            <div class="xl:hidden block pr-2" id="menuButton">
               <a href="">
-                <svg style="width: 32px; height: 32px" viewBox="0 0 24 24">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-12 h-12"
+                >
                   <path
-                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="relative grow lg:mr-32 2xl:mr-80">
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="search..."
+                class="py-2 px-6 bg-gray-200 rounded-full w-full grow col-span-2 placeholder:font-semibold focus:outline-yellow-500"
+              />
+              <a href="" class="absolute right-3 top-1">
+                <svg style="width: 29px; height: 29px" viewBox="0 0 24 24">
+                  <path
+                    fill="black"
                     d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
                   />
                 </svg>
               </a>
             </div>
-            <div class="grow">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="py-2 px-4 mx-4 bg-gray-200 rounded-full w-full max-w-2xl"
-              />
-            </div>
-            <div id="notifications" class="ml-8 md:block hidden">
+            <div id="notifications" class="ml-8 md:block hidden order-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -227,18 +263,20 @@
                 />
               </svg>
             </div>
-            <div id="userProfile" class="ml-8 mr-4 w-14 h-14 min-w-max">
+            <div id="userProfile" class="ml-4 w-14 h-14 min-w-max order-4">
               <img
                 src="https://i.pravatar.cc/50?img=12"
                 alt="user1profilepic"
                 class="rounded-full h-14 w-14"
               />
             </div>
-            <div class="text-lg font-bold hidden xl:block">Morgan Oakley</div>
+            <div class="text-lg font-bold hidden xl:block order-5 ml-2">
+              Morgan Oakley
+            </div>
           </div>
           <div
             id="userBar"
-            class="flex lg:justify-between md:justify-end justify-center items-center"
+            class="flex lg:justify-between md:justify-end justify-center mx-auto w-full"
           >
             <div id="user" class="items-center gap-5 hidden lg:flex">
               <img
@@ -251,25 +289,25 @@
                 <span class="text-2xl font-bold">Morgan Oakley (@morgan)</span>
               </div>
             </div>
-            <div id="actions" class="">
+            <div id="actions" class="w-fit overflow-hidden">
               <ul class="flex xl:gap-8 gap-4">
                 <li>
                   <button
-                    class="bg-sky-550 w-28 h-10 rounded-full text-white font-bold"
+                    class="bg-sky-550 hover:bg-sky-600 w-24 sm:w-28 h-10 rounded-full text-white font-bold"
                   >
                     New
                   </button>
                 </li>
                 <li>
                   <button
-                    class="bg-sky-550 w-28 h-10 rounded-full text-white font-bold"
+                    class="bg-sky-550 hover:bg-sky-600 w-24 sm:w-28 h-10 rounded-full text-white font-bold"
                   >
                     Upload
                   </button>
                 </li>
                 <li>
                   <button
-                    class="bg-sky-550 w-28 h-10 rounded-full text-white font-bold"
+                    class="bg-sky-550 hover:bg-sky-600 w-24 sm:w-28 h-10 rounded-full text-white font-bold"
                   >
                     Share
                   </button>
@@ -279,7 +317,7 @@
           </div>
         </header>
         <section
-          class="bg-gray-200 overflow-auto p-6 grid xl:grid-cols-[1fr,20rem] gap-5 h-full place-content-start"
+          class="bg-gray-200 overflow-auto p-6 grid xl:grid-cols-[1fr,20rem] 3xl:grid-cols-[1fr,40rem] gap-5 h-full place-content-start"
           id="contentPane"
         >
           <div class="grid place-content-start" id="yourProjects">
@@ -697,7 +735,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-rows-2 gap-4">
+          <div class="grid grid-rows-2 3xl:grid-cols-2 gap-4">
             <div class="" id="Announcements">
               <h2 class="text-2xl font-semibold my-4">Announcements</h2>
               <div
