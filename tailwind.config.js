@@ -4,7 +4,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        OpenSans: ["Open Sans", "sans-serif"],
+      },
+      colors: {
+        sky: {
+          550: "#0d98d9",
+        },
       },
     },
   },

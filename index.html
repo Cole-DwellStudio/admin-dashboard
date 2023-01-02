@@ -9,14 +9,16 @@
     <title>Admin Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="font-poppins">
-    <div class="grid grid-cols-[20rem,1fr] overflow-auto h-screen">
-      <div class="bg-sky-500 px-8 py-6 h-full" id="dashboard">
+  <body class="font-OpenSans">
+    <div class="grid xl:grid-cols-[20rem,1fr] overflow-auto h-screen">
+      <div class="bg-sky-550 px-8 py-6 h-full hidden xl:block" id="sidebar">
         <div class="pb-8 flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +33,7 @@
             />
           </svg>
 
-          <span class="text-3xl font-semibold text-white my-auto pl-2"
+          <span class="text-3xl font-bold text-white my-auto pl-2"
             >Dashboard</span
           >
         </div>
@@ -41,7 +43,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-6 h-6 mb-1"
+              class="w-6 h-6"
             >
               <path
                 d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
@@ -57,7 +59,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-6 h-6 mb-1"
+              class="w-6 h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -72,7 +74,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-6 h-6 mb-1"
+              class="w-6 h-6"
             >
               <path
                 d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z"
@@ -88,7 +90,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-6 h-6 mb-1"
+              class="w-6 h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -103,7 +105,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-6 h-6 mb-1"
+              class="w-6 h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -121,7 +123,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-6 h-6 mb-1"
+              class="w-6 h-6"
             >
               <path
                 fill-rule="evenodd"
@@ -136,14 +138,59 @@
           </div>
         </ul>
         <ul class="font-semibold text-white text-2xl space-y-3">
-          <div><img src="" alt="" /><a href="">Settings</a></div>
-          <div><img src="" alt="" /><a href="">Support</a></div>
-          <div><img src="" alt="" /><a href="">Privacy</a></div>
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.828 2.25c-.916 0-1.699.663-1.85 1.567l-.091.549a.798.798 0 01-.517.608 7.45 7.45 0 00-.478.198.798.798 0 01-.796-.064l-.453-.324a1.875 1.875 0 00-2.416.2l-.243.243a1.875 1.875 0 00-.2 2.416l.324.453a.798.798 0 01.064.796 7.448 7.448 0 00-.198.478.798.798 0 01-.608.517l-.55.092a1.875 1.875 0 00-1.566 1.849v.344c0 .916.663 1.699 1.567 1.85l.549.091c.281.047.508.25.608.517.06.162.127.321.198.478a.798.798 0 01-.064.796l-.324.453a1.875 1.875 0 00.2 2.416l.243.243c.648.648 1.67.733 2.416.2l.453-.324a.798.798 0 01.796-.064c.157.071.316.137.478.198.267.1.47.327.517.608l.092.55c.15.903.932 1.566 1.849 1.566h.344c.916 0 1.699-.663 1.85-1.567l.091-.549a.798.798 0 01.517-.608 7.52 7.52 0 00.478-.198.798.798 0 01.796.064l.453.324a1.875 1.875 0 002.416-.2l.243-.243c.648-.648.733-1.67.2-2.416l-.324-.453a.798.798 0 01-.064-.796c.071-.157.137-.316.198-.478.1-.267.327-.47.608-.517l.55-.091a1.875 1.875 0 001.566-1.85v-.344c0-.916-.663-1.699-1.567-1.85l-.549-.091a.798.798 0 01-.608-.517 7.507 7.507 0 00-.198-.478.798.798 0 01.064-.796l.324-.453a1.875 1.875 0 00-.2-2.416l-.243-.243a1.875 1.875 0 00-2.416-.2l-.453.324a.798.798 0 01-.796.064 7.462 7.462 0 00-.478-.198.798.798 0 01-.517-.608l-.091-.55a1.875 1.875 0 00-1.85-1.566h-.344zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <a href="">Settings</a>
+          </div>
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <a href="">Support</a>
+          </div>
+          <div class="flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <a href="">Privacy</a>
+          </div>
         </ul>
       </div>
       <div class="h-full flex flex-col" id="adminPane">
         <header
-          class="topBar py-8 mr-16 pl-12 pr-16 h-fit w-full bg-white drop-shadow-md"
+          class="topBar pt-8 pb-5 mr-16 md:pl-12 pl-4 md:pr-16 pr-4 h-fit w-full bg-white drop-shadow-md space-y-8"
         >
           <div id="topBar" class="flex items-center justify-start">
             <div class="">
@@ -164,7 +211,7 @@
                 class="py-2 px-4 mx-4 bg-gray-200 rounded-full w-full max-w-2xl"
               />
             </div>
-            <div id="notifications" class="ml-8">
+            <div id="notifications" class="ml-8 md:block hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -180,26 +227,59 @@
                 />
               </svg>
             </div>
-            <div id="userProfile" class="ml-8 mr-4">
+            <div id="userProfile" class="ml-8 mr-4 w-14 h-14 min-w-max">
               <img
                 src="https://i.pravatar.cc/50?img=12"
                 alt="user1profilepic"
                 class="rounded-full h-14 w-14"
               />
             </div>
-            <div class="text-lg font-bold">Morgan Oakley</div>
+            <div class="text-lg font-bold hidden xl:block">Morgan Oakley</div>
           </div>
-          <div id="userBar">
-            <div id="user"></div>
-            <div id="actions">
-              <button id="action1"></button>
-              <button id="action2"></button>
-              <button id="action3"></button>
+          <div
+            id="userBar"
+            class="flex lg:justify-between md:justify-end justify-center items-center"
+          >
+            <div id="user" class="items-center gap-5 hidden lg:flex">
+              <img
+                src="https://i.pravatar.cc/100?img=12"
+                alt="user1profilepic"
+                class="rounded-full h-20 w-20"
+              />
+              <div class="">
+                <h3 class="text-sm font-bold">Hi there,</h3>
+                <span class="text-2xl font-bold">Morgan Oakley (@morgan)</span>
+              </div>
+            </div>
+            <div id="actions" class="">
+              <ul class="flex xl:gap-8 gap-4">
+                <li>
+                  <button
+                    class="bg-sky-550 w-28 h-10 rounded-full text-white font-bold"
+                  >
+                    New
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="bg-sky-550 w-28 h-10 rounded-full text-white font-bold"
+                  >
+                    Upload
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="bg-sky-550 w-28 h-10 rounded-full text-white font-bold"
+                  >
+                    Share
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </header>
         <section
-          class="bg-gray-200 overflow-auto p-6 grid grid-cols-[1fr,20rem] gap-5 h-full place-content-start"
+          class="bg-gray-200 overflow-auto p-6 grid xl:grid-cols-[1fr,20rem] gap-5 h-full place-content-start"
           id="contentPane"
         >
           <div class="grid place-content-start" id="yourProjects">
